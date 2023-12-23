@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Edumy - Education App, Quiz, Badgewith Admin Panel - Create and sell your
+      course using Edumy App
+    </title>
+    <meta
+      name="description"
+      content="Edumy Education App is app that built using flutter with power full function,clean code and have beautiful design like udemy, you can upload video from youtube server or from your hosting"
+    />
+    <meta name="author" content="Power Render" />
+    <meta name="copyright" content="Power Render" />
+    <meta
+      name="generator"
+      content="Documenter v2.0 https://evp.to/documenter"
+    />
+    <meta name="date" content="2021-05-27T00:00:00+02:00" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="assets/css/documenter_style.css" rel="stylesheet" />
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <style>
+      html,
+      body {
+        background-color: #ffffff;
+        color: #383838;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: #383838;
+      }
+
+      section table {
+        background-color: #ffffff;
+      }
+
+      ::-moz-selection {
+        background: #444444;
+        color: #dddddd;
+      }
+
+      ::selection {
+        background: #444444;
+        color: #dddddd;
+      }
+
+      a.brand {
+        background-image: url();
+      }
+
+      a,
+      a:hover,
+      a:active {
+        color: #0000ff;
+      }
+
+      hr {
+        border-top: 1px solid #ebebeb;
+        border-bottom: 1px solid #ffffff;
+      }
+
+      div.navbar-inner,
+      .navbar .nav li ul {
+        background: #dddddd;
+        color: #222222;
+      }
+
+      a.btn-navbar {
+        background: #dddddd;
+        color: #222222;
+      }
+
+      .navbar .nav li a {
+        color: #222222;
+        text-shadow: 1px 1px 0px #eeeeee;
+      }
+
+      .navbar .nav li a:hover,
+      .navbar .nav li.active a {
+        text-shadow: none;
+      }
+
+      div.navbar-inner ul {
+      }
+
+      .marketing-byline {
+        color: #ffffff;
+      }
+
+      .navbar .nav > li a {
+        color: #444444;
+      }
+
+      .navbar .nav > li a:hover,
+      a.btn-navbar:hover {
+        background: #444444;
+        color: #dddddd;
+      }
+
+      .navbar .nav .active > a,
+      .navbar .nav .active > a:hover,
+      a.btn-navbar:active {
+        background-color: #444444;
+        color: #dddddd;
+      }
+
+      .navbar .nav li ul li a:hover {
+        background: #444444;
+        color: #dddddd;
+      }
+
+      .navbar .nav li ul li a:active {
+        background: #444444;
+        color: #dddddd;
+      }
+
+      .btn-primary {
+        background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+        background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
+        background-image: -webkit-gradient(
+          linear,
+          0 0,
+          0 0088CC%,
+          from(#dddddd),
+          to(#0044cc)
+        );
+        background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+        background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+        background-image: linear-gradient(top, #0088cc, #0044cc);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+        border-color: #0044cc #0044cc #bfbfbf;
+        color: #ffffff;
+      }
+
+      .btn-primary:hover,
+      .btn-primary:active,
+      .btn-primary.active,
+      .btn-primary.disabled,
+      .btn-primary[disabled] {
+        background-color: #0044cc;
+      }
+
+      #documenter_copyright {
+        display: block !important;
+        visibility: visible !important;
+      }
+    </style>
+  </head>
+
+  <body
+    class="documenter-project-edumy-education-app,-quiz,-badgewith-admin-panel"
+    data-spy="scroll"
+    id="top"
+  >
+    <!-- Documentation Navbar -->
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a
+            class="btn btn-navbar"
+            data-toggle="collapse"
+            data-target=".nav-collapse"
+          >
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#"
+            >Edumy - Education App, Quiz, Badgewith Admin Panel - Create and
+            sell your course using Edumy App</a
+          >
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li>
+                <a href="#introduction" title="Introduction">Introduction</a>
+              </li>
+              <li>
+                <a href="#requirements" title="Requirements">Requirements</a>
+              </li>
+              <li><a href="#database" title="Database">Database</a></li>
+              <li>
+                <a href="#admin_panel" title="Admin Panel">Admin Panel</a>
+              </li>
+              <li>
+                <a href="#android_app" title="Android App">Android App</a>
+              </li>
+              <li><a href="#admob" title="Support">Ads & Upgrader</a></li>
+              <li><a href="#update" title="Update">Update</a></li>
+              <li><a href="#change_log" title="Change Log">Change Log</a></li>
+              <li><a href="#support" title="Support">Support</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Navbar -->
+
+    <!-- Main Container Beginning -->
+
+    <div class="container" id="documenter_content">
+      <div id="documenter-cover">
+        <div class="masthead">
+          <h1>
+            Edumy - Education App, Quiz, Badgewith Admin Panel - Create and sell
+            your course using Edumy App
+          </h1>
+          <p>
+            Edumy Education App is app that built using flutter with power full
+            function,clean code and have beautiful design like udemy, this app
+            have 3 rule important, the first rule is admin, teacher/author and
+            user. Admin can add unlimited teacher/author via admin panel,
+            approve course that uploaded by teacher/author. Teacher/author can
+            upload unlimited course via admin panel with their account. User can
+            buy course directly in Edumy app using payment gateway
+            braintree(paypal, credit card, google pay and more).
+          </p>
+          <ul class="marketing-byline">
+            <li>created: 03/10/2011</li>
+            <li>latest update: 05/27/2021</li>
+            <li>by: Power Render</li>
+            <li><a href="https://kitasinau.com/">kitasinau.com/</a></li>
+          </ul>
+          <p class="download-info"></p>
+        </div>
+        <!-- masthead -->
+
+        <div id="intro">
+          <p class="highlight hero-unit">
+            Thank you for purchasing my theme. If you have any questions that
+            are beyond the scope of this help file, please feel free to email
+            via my user page contact form here. Thanks so much!
+          </p>
+        </div>
+        <!-- intro -->
+      </div>
+
+      <section id="introduction">
+        <div class="page-header">
+          <h3>Introduction</h3>
+          <hr class="notop" />
+        </div>
+        <p>
+          We would like to thank you for choosing Edumy App, this app created by
+          using flutter and when you facing problem please contact me via
+          related email.
+        </p>
+      </section>
+      <section id="requirements">
+        <div class="page-header">
+          <h3>Requirements</h3>
+          <hr class="notop" />
+        </div>
+        <p>
+          There are system requirements to setup this app to working perfectly,
+          please follow step by step.
+        </p>
+        <p>Recomended PHP Configuration Limits:</p>
+        <ul>
+          <li
+            style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px"
+          >
+            upload_max_filesize = 32M (change to higher when upload higher size
+            of video)
+          </li>
+          <li
+            style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px"
+          >
+            post_max_size = 32M (change to higher when upload higher size of
+            video)
+          </li>
+          <li
+            style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px"
+          >
+            PHP Version: 8.0
+          </li>
+          <li>Flutter 3.13.5 • channel stable and Dart 2.19.2</li>
+        </ul>
+        <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px">
+          Braintree Account Setup:
+        </p>
+        <ul>
+          <li
+            style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px"
+          >
+            Please register first in
+            <a href="https://www.braintreepayments.com/">braintree</a>
+          </li>
+          <li
+            style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px"
+          >
+            Setup you payment gateway on braintree dashboard
+          </li>
+          <li
+            style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px"
+          >
+            Copy and paste your api Merchant Id, Public Key and Private Key
+          </li>
+        </ul>
+        <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px">
+          If you dont know how to change that, please contact your hosting
+          provider to help you.
+        </p>
+        <p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px">
+          &nbsp;
+        </p>
+      </section>
+      <section id="database">
+        <div class="page-header">
+          <h3>Database</h3>
+          <hr class="notop" />
+        </div>
+        <p>
+          Firstly create new database on your phpmyadmin, after that open db
+          directory and import it.
+        </p>
+        <p>
+          <img alt="" src="assets/images/image_5.png" style="width: 70%" />
+        </p>
+        <p>
+          if you have imported database to your phpmyadmin, please change
+          database connection in
+          <strong>include/connection.php</strong>
+        </p>
+        <p>
+          <img alt="" src="assets/images/image_7.png" style="width: 70%" />
+        </p>
+        <p>
+          And the last change base url of image, the location file of base url
+          img in i<strong>mage/baseurl.php</strong>
+        </p>
+        <p>
+          <img alt="" src="assets/images/image_8.png" style="width: 70%" />
+        </p>
+        <p>&nbsp;</p>
+      </section>
+      <section id="admin_panel">
+        <div class="page-header">
+          <h3>Admin Panel</h3>
+          <hr class="notop" />
+        </div>
+        <p>
+          Admin panel have 2 rule, admin and teacher/author to create course or
+          manage course easily, before create course and publish it make sure
+          change the braintree integration in setting button and change with
+          yours.
+        </p>
+        <p>
+          <img alt="" src="assets/images/image_4.png" style="width: 70%" />
+        </p>
+        <p>
+          Go ahead to manage course, you can click on course button on top
+          button or click course on home page.
+        </p>
+        <p>
+          <img alt="" src="assets/images/image_2.png" style="width: 70%" />
+        </p>
+        <p>&nbsp;</p>
+        <p>
+          Edit Button (green button) used to edit course, edit status approved
+          or rejected, change title, discount, price, image and more
+        </p>
+        <p>Add Button (blue button) used to add new lecture on course</p>
+        <p>
+          Trash Button (red button) used to delete course (when you delete this
+          course, all lecture will be deleted to)
+        </p>
+        <h4>
+          If you dont understand how to deploy to hosting, you can follow video
+          tutorial on youtube by access this link
+          <a
+            href="https://www.youtube.com/watch?v=FOGOVIz7e5o&ab_channel=AzharulRafy"
+            >Deploy to hosting</a
+          >
+        </h4>
+      </section>
+      <section id="android_app">
+        <div class="page-header">
+          <h3>Android App</h3>
+          <hr class="notop" />
+        </div>
+        <p>
+          Firstly you must prepare Android Studio or Visual Studio Code to edit
+          severals code, icon, package or more. In this guide documentation
+          using Android Studio.
+        </p>
+        <p>
+          Change base url in Android Studio (just replace base url with your
+          base url)
+        </p>
+        <p>
+          <img alt="" src="assets/images/image_1.png" style="width: 70%" />
+        </p>
+        <p>Change app name Android.</p>
+        <p>
+          <img alt="" src="assets/images/image_3.png" style="width: 70%" />
+        </p>
+        <p>Change icon app.</p>
+        <p>
+          <img alt="" src="assets/images/image_6.png" style="width: 70%" />
+        </p>
+        <p>
+          This source code used flutter_launcher_icons to make your easily
+          create icon for your app, more detail about this library refer to this
+          link:&nbsp;<a href="https://pub.dev/packages/flutter_launcher_icons"
+            >flutter_launcher_icons | Dart Package (pub.dev)</a
+          >
+        </p>
+        <p>
+          But, you just run this command&nbsp;<strong
+            ><span
+              style="
+                background-color: transparent;
+                color: rgb(51, 51, 51);
+                font-family: 'Roboto Mono', 'Source Code Pro', Menlo,
+                  'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco,
+                  Consolas, monospace;
+                font-size: 13.6px;
+              "
+              >flutter pub run flutter_launcher_icons:main&nbsp;</span
+            ></strong
+          >to make icons.
+        </p>
+        <p>
+          For change app version to upload play store, please refer to this
+          official guide documentation:
+        </p>
+        <p>
+          <a
+            href="https://flutter.dev/docs/deployment/android#review-the-build-configuration"
+            >Build and release an Android app - Flutter</a
+          >
+        </p>
+        <p>&nbsp;</p>
+        <p>Configuration Facebook App Event</p>
+        <ul>
+          <li>
+            1. Create app project on facebook by access this link
+            <a href="https://developers.facebook.com/">Create Project</a>
+          </li>
+          <li>
+            2. Choose my app, after that you will see page like this and click
+            create app
+          </li>
+          <p>
+            <img
+              alt=""
+              src="assets/images/facebook_event_1.png"
+              style="width: 70%"
+            />
+          </p>
+          <li>
+            3. After you already finish create the project, next step copy fb id
+            and client token
+          </li>
+          <h2>App Id</h2>
+          <p>
+            <img
+              alt=""
+              src="assets/images/facebook_event_2.png"
+              style="width: 70%"
+            />
+          </p>
+          <h2>Client Token</h2>
+          <p>
+            <img
+              alt=""
+              src="assets/images/facebook_event_3.png"
+              style="width: 70%"
+            />
+          </p>
+          <li>
+            4. After you already copy App Id and Client Token, next step paste
+            to the project on flutter
+          </li>
+          <h2>Paste App Id & Client Token</h2>
+          <p>
+            <img
+              alt=""
+              src="assets/images/facebook_event_4.png"
+              style="width: 70%"
+            />
+          </p>
+          <li>
+            5. After complete it, you will see the report app event like this
+          </li>
+          <h2>App Event</h2>
+          <p>
+            <img
+              alt=""
+              src="assets/images/facebook_event_5.png"
+              style="width: 70%"
+            />
+          </p>
+        </ul>
+      </section>
+      <section id="admob">
+        <div class="page-header">
+          <h3>Advertisement & Upgrader</h3>
+          <hr class="notop" />
+        </div>
+        <p>Please follow these step to configuration with your ads code</p>
+
+        <p>1. Change Application Id (Admob) in Manifest, see image below</p>
+        <p>
+          <img alt="" src="assets/images/image_12.png" style="width: 70%" />
+        </p>
+        <p>
+          2. In Image above you saw demo and live aplication id, if you want to
+          run app as a debug mode, you can activate demo and when you want to
+          build apk to relase you must change to live mode
+        </p>
+        <p>
+          3. For replace banner id and native id code, you can replace it from
+          admin panel in tab setting
+        </p>
+        <p>4. Change appOpenId code in project, see image below</p>
+        <p>
+          <img alt="" src="assets/images/image_11.png" style="width: 70%" />
+        </p>
+        <p>
+          5. Send update dialog to user when any update new app, you can see
+          example update dialog
+        </p>
+        <p>
+          <img alt="" src="assets/images/image_10.jpg" style="width: 70%" />
+        </p>
+        <p>
+          6. To send update dialog like above image, you just update current
+          version same with play store, open updateversion.xml inside admin
+          panel directory
+        </p>
+        <p>
+          <img alt="" src="assets/images/image_13.png" style="width: 70%" />
+        </p>
+        <p>
+          7. You can change title, description, pubDate, enclosure with yours.
+        </p>
+      </section>
+      <section id="update">
+        <h4>To old buyer please follow these step to modify your code</h4>
+
+        <h6>
+          1. Import multiselect-dropdown.js in
+          (assets/js/multiselect-dropdown.js) to your current website
+        </h6>
+        <h6>
+          2. Update header in (inlcude/header.php) please take look in line 36
+        </h6>
+        <h6>
+          3. You can delete vendor directory and composer, because in latest
+          project no need that again (braintree)
+        </h6>
+        <h6>
+          4. Replace transaction file in (uitls/transaction.php) with latest
+          version
+        </h6>
+        <h6>
+          5. Update home.php with latest version (copy and paste to your
+          website)
+        </h6>
+        <h6>
+          6. Copy and paste addenrollment.php and (action/add_enrollment.php) to
+          your website
+        </h6>
+        <h6>7. Finish!!!</h6>
+      </section>
+      <section id="change_log">
+        <div class="page-header">
+          <h3>Change Log</h3>
+          <hr class="notop" />
+        </div>
+        <p>Version 1.9.0</p>
+        <ul>
+          <li>upgrade using flutter 3.13.5</li>
+          <li>add open ads admob</li>
+          <li>facebook app event</li>
+          <li>remote update app</li>
+          <li>add validation check login and register</li>
+          <li>fix minor bugs</li>
+        </ul>
+        <p>Version 1.8.0</p>
+        <ul>
+          <li>add paystack payment gateway</li>
+          <li>add manual payment gateway by wa</li>
+          <li>add user enrollment from admin panel</li>
+          <li>setup support IOS</li>
+          <li>fix minor bugs</li>
+        </ul>
+        <p>Version 1.7.0</p>
+        <ul>
+          <li>Explore course without login</li>
+          <li>upgrade using flutter 3.3.7</li>
+          <li>Fix minor bugs</li>
+        </ul>
+        <p>Version 1.6.0</p>
+        <ul>
+          <li>
+            Change project structure with cubit state management and clean code
+          </li>
+          <li>Change UI desing all pages</li>
+          <li>Update with null safety</li>
+          <li>Update latest library</li>
+          <li>Update online class work in Android 11 below</li>
+          <li>Add native ads (StartApp and Admob)</li>
+          <li>Youtube player support</li>
+          <li>Improve media player</li>
+          <li>Add infinity scroll item</li>
+          <li>Add search course</li>
+          <li>Update slider course</li>
+          <li>Build using: Flutter 3.0.0 • channel stable and Dart 2.17.0</li>
+          <li>Admin panel using PHP version: 8.0</li>
+        </ul>
+        <p>Version 1.0.0</p>
+        <ul>
+          <li>Login&nbsp;</li>
+          <li>Register</li>
+          <li>Slider Course</li>
+          <li>Popular Course</li>
+          <li>New Course</li>
+          <li>Popular Course by Review / Purchased</li>
+          <li>My Course</li>
+          <li>Video Player for Course</li>
+          <li>Give Rating Course</li>
+          <li>Info Notificaion</li>
+          <li>Detail Notification</li>
+          <li>Quiz</li>
+          <li>Leaderboards</li>
+          <li>Badge System</li>
+          <li>Favorite</li>
+          <li>Account</li>
+          <li>Video Looping</li>
+          <li>Video Autoplay</li>
+          <li>Theme App</li>
+          <li>Detail Course</li>
+          <li>Detail Author / Teacher</li>
+          <li>Payment Gateway</li>
+          <li>History Purchased</li>
+          <li>And more</li>
+        </ul>
+        <p>&nbsp;</p>
+      </section>
+      <section id="support">
+        <div class="page-header">
+          <h3>Support</h3>
+          <hr class="notop" />
+        </div>
+        <p>
+          <span
+            style="
+              color: rgb(56, 56, 56);
+              font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+              font-size: 14px;
+            "
+            >If you need more information or customization please contact
+            me:</span
+          >
+        </p>
+        <p
+          style="
+            margin: 0px 0px 10px;
+            color: rgb(56, 56, 56);
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 14px;
+          "
+        >
+          gmail:
+          &#112;&#111;&#119;&#101;&#114;&#114;&#101;&#110;&#100;&#101;&#114;&#55;&#51;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;
+        </p>
+        <p
+          style="
+            margin: 0px 0px 10px;
+            color: rgb(56, 56, 56);
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 14px;
+          "
+        >
+          wa :&nbsp;<a
+            href="http://wa.me/+6285695525342"
+            style="color: rgb(0, 0, 255); text-decoration-line: none"
+            >My Whats App</a
+          >
+        </p>
+      </section>
+      <hr />
+
+      <footer>
+        <p>
+          Copyright Power Render 2021 made with the
+          <a href="https://evp.to/documenter">Documenter v2.0</a>
+        </p>
+      </footer>
+    </div>
+    <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script>
+      document.createElement("section");
+      var duration = "500",
+        easing = "swing";
+    </script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.scrollTo.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/bootstrap-min.js"></script>
+  </body>
+</html>
